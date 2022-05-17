@@ -156,7 +156,7 @@ public class ProviderDaoImpl implements ProviderDao{
                 provider.setPassword(rs.getString("password"));
                 provider.setName(rs.getString("name"));
                 provider.setAddress(rs.getString("address"));
-                provider.setAddress(rs.getString("contact"));
+                provider.setContact(rs.getString("contact"));
             }
         } catch (SQLException e) {
             e.printStackTrace();

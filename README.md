@@ -1,7 +1,8 @@
 # Soft engineering training assignment项目描述：
 这个项目是在软工实训上学习elm项目之后，为了锻练和巩固JDBC所做的项目
 项目的名称是货物管理系统，项目在整体逻辑方面与elm项目有相似之处，具体的相似是指
-同样是管理员登录，以及涉及到基本的增删改查。但是这个项目的代码实现，以及增删改查的具体实现功能与原来的项目不同，下面会一一指出。
+同样是管理员登录，以及涉及到基本的增删改查。例如供货商信息的查找，供货商信息的增加，供货商信息的删除等操作。
+但是这个项目的代码实现，以及增删改查的具体实现功能与原来的项目不同，下面会一一指出。
 下面讲主要不同之处
 首先，在管理员登录使用了验证码，这个涉及到随机字符串的生成，以及校验，对比和反馈
 在po/Admin中加入了下面的静态方法
@@ -96,7 +97,7 @@ public List<Provider> listProvider2(int id, int opt) {
                 provider.setPassword(rs.getString("password"));
                 provider.setName(rs.getString("name"));
                 provider.setAddress(rs.getString("address"));
-                provider.setAddress(rs.getString("contact"));
+                provider.setContact(rs.getString("contact"));
                 list.add(provider);
             }
         } catch (SQLException e) {
@@ -113,4 +114,4 @@ public List<Provider> listProvider2(int id, int opt) {
 
 
 最后其他很多细节方面与微课，和上课所交的elm项目有很多不同之处，这里不再一一赘述，但是实现了最后的增删改查。
-运行结果还是能成功连接了数据库，并且得到了期望的结果。
+运行结果还是能成功连接数据库，并且得到了期望的结果。

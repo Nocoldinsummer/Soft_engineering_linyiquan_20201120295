@@ -13,6 +13,7 @@ public class Trie {
         if (root == null || str == null){
             return;
         }
+//
         //将字符串转换为字符数组
         char[] chars = str.toCharArray();
         for (int i = 0; i < chars.length; i++) {

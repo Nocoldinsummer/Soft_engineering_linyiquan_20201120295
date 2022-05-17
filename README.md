@@ -1,4 +1,4 @@
-#Soft engineering training assignment项目描述：
+# Soft engineering training assignment项目描述：
 这个项目是在软工实训上学习elm项目之后，为了锻练和巩固JDBC所做的项目
 项目的名称是货物管理系统，项目在整体逻辑方面与elm项目有相似之处，具体的相似是指
 同样是管理员登录，以及涉及到基本的增删改查。但是这个项目的代码实现，以及增删改查的具体实现功能与原来的项目不同，下面会一一指出。
